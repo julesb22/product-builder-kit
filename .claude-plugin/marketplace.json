@@ -1,0 +1,15 @@
+{
+  "name": "product-builder-kit",
+  "description": "Claude Code skills for product managers, covering the full feature lifecycle from discovery to post-launch. Built by Jules Boiteux, companion to the Vibe Coding Academy.",
+  "owner": {
+    "name": "Jules Boiteux",
+    "email": "jules@roastmypricingpage.com"
+  },
+  "plugins": [
+    {
+      "name": "pm-skills",
+      "source": "./product",
+      "description": "10 battle-tested PM skills: discovery, definition, design and validation, delivery and post-launch. Install once, get the whole system."
+    }
+  ]
+}
