@@ -76,6 +76,6 @@ These skills are the output of the workflow I teach at Vibe Coding Academy: how 
 
 ---
 
-**Built as a companion to [Vibe Coding Academy](https://www.vibecodingacademy.ai/) — the course that teaches PMs to ship with Claude Code.**
+**Built as a companion to [Claude Code for PMs](https://www.vibecodingacademy.ai/claude-code-for-pms) — the Vibe Coding Academy course that teaches PMs to ship with Claude Code.**
 
-Explore the full curriculum and learn to build your own PM automation systems at [vibecodingacademy.ai](https://www.vibecodingacademy.ai/).
+Learn to build your own PM automation systems and master the full PM-to-builder workflow at [vibecodingacademy.ai/claude-code-for-pms](https://www.vibecodingacademy.ai/claude-code-for-pms).
