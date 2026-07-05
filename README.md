@@ -76,6 +76,6 @@ These skills are the output of the workflow I teach at Vibe Coding Academy: how 
 
 ---
 
-**Built by [Jules Boiteux](https://roastmypricingpage.com) as a companion to [Vibe Coding Academy](https://vibecoding.academy) — the course that teaches PMs to ship with Claude Code.**
+**Built as a companion to [Vibe Coding Academy](https://www.vibecodingacademy.ai/) — the course that teaches PMs to ship with Claude Code.**
 
-Explore the full curriculum and learn to build your own PM automation systems at [vibecoding.academy](https://vibecoding.academy).
+Explore the full curriculum and learn to build your own PM automation systems at [vibecodingacademy.ai](https://www.vibecodingacademy.ai/).
