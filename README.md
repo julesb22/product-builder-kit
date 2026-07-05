@@ -73,3 +73,9 @@ Fork it. Each skill is one `SKILL.md` file; edit the ones that do not match how 
 ## Learn to build your own
 
 These skills are the output of the workflow I teach at Vibe Coding Academy: how to go from PM to product builder with Claude Code. The course teaches you to build skills like these for your own stack; this kit lets you start using them today.
+
+---
+
+**Built by [Jules Boiteux](https://roastmypricingpage.com) as a companion to [Vibe Coding Academy](https://vibecoding.academy) — the course that teaches PMs to ship with Claude Code.**
+
+Explore the full curriculum and learn to build your own PM automation systems at [vibecoding.academy](https://vibecoding.academy).
