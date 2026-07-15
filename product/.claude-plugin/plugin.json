@@ -1,6 +1,6 @@
 {
   "name": "pm-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Claude Code skills for product managers: 10 skills covering the full feature lifecycle (discovery, definition, design and validation, delivery, post-launch). Outputs chain into each other so evidence compounds across the lifecycle.",
   "author": {
     "name": "Jules Boiteux",

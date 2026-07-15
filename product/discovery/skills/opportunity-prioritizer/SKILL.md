@@ -5,7 +5,16 @@ description: Turn a messy list of ideas, requests, and insights — or a single 
 
 # Opportunity Prioritizer
 
-Turn a messy list of opportunities into a ranked, defensible priority list. The framework is RICE, but the real product is the written assumptions: every score comes with a one-liner a stakeholder could challenge.
+Score opportunities with RICE to decide what's worth building. The framework is RICE, but the real product is the written assumptions: every score comes with a one-liner a stakeholder could challenge.
+
+## Two modes
+
+Detect which one the request is and run it. Same RICE engine, same assumption discipline — only the framing and output differ.
+
+- **Assess mode (one opportunity)** — "assess/size/score the opportunity behind this issue," or a single GitHub issue / ticket / sales ask. Score the one item, state a clear go / not-yet / drop read, and place it against the existing roadmap (`product/priorities-*.md`) so it isn't judged in a vacuum. A comparison of **two** issues is still assess mode: score each, then say which is the stronger bet and why.
+- **Rank mode (a list)** — three or more opportunities, a folder of insights, or "what should we build next." Score them all and produce the ranked table with a not-doing section.
+
+If it's ambiguous which mode fits, ask; don't guess.
 
 ## Input
 
@@ -47,6 +56,17 @@ Rules:
 
 ## Output
 
+### Assess mode (one opportunity, or two compared)
+
+1. **RICE line(s)** with the assumption under each score — one item, or one row per item when comparing two.
+2. **The verdict**: a plain go / not-yet / drop read. When two are compared, name the stronger bet and the honest reason (often it's Effort or Confidence, not Reach).
+3. **What would raise confidence**: the one piece of evidence (interviews, funnel data, duplicate-issue tally) that would move the score — since a single public request measures who asked, not who is affected.
+4. **One-line problem statement** ready for `prd-writer` (problem, who has it, evidence), if the verdict is go.
+
+No ranked table, no not-doing section for a single item — that's rank mode.
+
+### Rank mode (a list)
+
 1. **Ranked table**: opportunity, R, I, C, E, RICE score, and the assumption lines under each row.
 2. **"What we are NOT doing and why"**: mandatory section. List the opportunities that fell below the line and one honest sentence each on why. A priority list without a not-doing list is a wish list.
 3. **The top opportunity as a one-line problem statement**, phrased and ready to hand to `prd-writer` (problem, who has it, evidence).
@@ -55,6 +75,8 @@ Save to `product/priorities-{date}.md` so the PRD writer can find it.
 
 ## Handoff
 
-End every run with:
+End every run by pointing at the winner — the #1 in rank mode, or the go/stronger-bet item in assess mode:
 
-"Take the #1 opportunity into `prd-writer`. It will interview you before writing anything; bring the evidence behind the confidence score."
+"Take this into `prd-writer`. It will interview you before writing anything; bring the evidence behind the confidence score."
+
+If the assess-mode verdict was not-yet or drop, say so plainly and hand back the "what would raise confidence" step instead — don't push a weak opportunity into a PRD.
