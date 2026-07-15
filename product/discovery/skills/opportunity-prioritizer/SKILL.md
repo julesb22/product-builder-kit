@@ -10,9 +10,21 @@ Turn a messy list of opportunities into a ranked, defensible priority list. The 
 ## Input
 
 - A list of opportunities: pasted, from a file, or auto-read from `product/insights/` (check that folder first and offer to include what is there).
+- **A single bubbled-up request** — a GitHub issue, support ticket, sales-call ask, or forum thread. One item is a valid input: score it, then slot it into the existing ranked list (read `product/priorities-*.md` if one exists) rather than ranking it in isolation. A request nobody has placed against the rest of the roadmap is not yet prioritized.
 - Optional: team capacity context (people, weeks, constraints).
 
 If `product/insights/` exists, read `INSIGHTS.md` and any funnel analyses so evidence-backed opportunities can be identified. If it does not exist, say so; scores will lean on the PM's judgment and confidence will reflect that.
+
+### Reading demand signals from a public request
+
+When the opportunity comes from a tracker (GitHub issue, Canny board, forum), pull the raw signals before scoring — for GitHub, `gh issue view <n> --repo <owner/repo> --json title,reactionGroups,comments,createdAt,labels`. What each signal feeds:
+
+- **Reactions / upvotes (👍)** → a *floor* on Reach, never the Reach itself. Public upvoters are a vocal, self-selected minority; most affected users never find the issue. Write the assumption that way: "Reach: 254 👍 over 3 yrs is a floor, not the count — extrapolate from active-user base, not from the thread."
+- **Comment volume + "any update?" pile-ups + duplicate/linked issues** → sustained demand. Many duplicates closed into one issue is stronger than a single high count.
+- **Age (open since…)** → longevity of the pain, and a reason the not-doing line must be honest if it keeps getting deferred.
+- **Requester association** (`NONE` / `CONTRIBUTOR` / `MEMBER`) and whether concrete use cases or reference products appear in the thread → sharpens Impact and Confidence.
+
+Public-request signals are real evidence, but they measure who showed up to ask, not who is affected. Keep that caveat in every score derived from them.
 
 ## Process
 
@@ -22,7 +34,8 @@ Score each opportunity on RICE:
 2. **Impact**: how much it moves the needle per user (3 massive, 2 high, 1 medium, 0.5 low, 0.25 minimal). Write the assumption.
 3. **Confidence**: be honest and cite the evidence class.
    - Backed by interview evidence (from `user-interview-synthesizer`) or funnel data (from `funnel-analyst`): high confidence, and say which source.
-   - Backed by one anecdote or competitor behavior: medium.
+   - Backed by a **public request with strong, quantified demand** (e.g. a long-standing GitHub issue with hundreds of reactions, heavy comment traffic, and duplicates): medium-to-high — cite the counts, and note it measures askers, not the affected population.
+   - Backed by one anecdote, a single ticket, or competitor behavior: medium.
    - Gut feel: low, and label it "gut feel" in writing.
 4. **Effort**: person-weeks, roughest credible estimate. Write the assumption.
 
