@@ -1,6 +1,6 @@
 ---
 name: opportunity-prioritizer
-description: Turn a messy list of ideas, requests, and insights into a ranked, defensible priority list using RICE with explicit written assumptions per score. Includes a mandatory "what we are NOT doing and why" section. Use when deciding what to build next, preparing a roadmap discussion, or after accumulating interview insights and funnel findings.
+description: Turn a messy list of ideas, requests, and insights — or a single bubbled-up feature request — into a ranked, defensible priority list using RICE with explicit written assumptions per score. Includes a mandatory "what we are NOT doing and why" section. Use when deciding what to build next, preparing a roadmap discussion, after accumulating interview insights and funnel findings, or whenever asked to assess, size, score, or compare the business opportunity behind a feature request, GitHub issue, support ticket, or sales ask. Triggers include a GitHub issue URL (e.g. github.com/<owner>/<repo>/issues/<n>) paired with intent to evaluate its opportunity, worth, demand, or priority.
 ---
 
 # Opportunity Prioritizer
